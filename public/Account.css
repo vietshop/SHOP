@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.from {
+    width: 380px;
+    max-width: 90%;
+    padding: 35px 30px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.from1 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+.from3 {
+    position: relative;
+    margin-bottom: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 8px;
+}
+
+.from3 input {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.from3 input:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 5px rgba(102, 126, 234, 0.4);
+}
+
+.from3 label {
+    display: block;
+    margin: 0px;
+    color: #555;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.show {
+    position: absolute;
+    right: 12px;
+    top: 40px;
+    cursor: pointer;
+    color: #667eea;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.from4 {
+    display: block;
+    color: #e74c3c;
+    margin-bottom: 15px;
+}
+
+.from5 {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.from5:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+.from5:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.from p {
+    margin-top: 20px;
+    color: #555;
+    font-size: 14px;
+}
+
+.a3 {
+    display: inline-block;
+    margin-top: 10px;
+    color: #667eea;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.a3:hover {
+    text-decoration: underline;
+}

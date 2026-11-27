@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOP-Đăng ký tài khoản</title>
+    <link rel="stylesheet" href="Reigister.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>ĐĂNG KÝ TÀI KHOẢN</h2>
+
+        <form id="registerForm">
+
+            <input
+                type="text"
+                id="fullname"
+                placeholder="Họ và tên"
+                required
+            >
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Địa chỉ Gmail"
+                required
+            >
+
+            <input
+                type="password"
+                id="password"
+                placeholder="Mật khẩu (ít nhất 8 ký tự)"
+                minlength="8"
+                required
+            >
+
+            <input
+                type="password"
+                id="confirmPassword"
+                placeholder="Xác nhận mật khẩu"
+                minlength="8"
+                required
+            >
+
+            <button type="submit">ĐĂNG KÝ</button>
+        </form>
+
+        <div id="otpSection" hidden>
+            <h3>XÁC NHẬN EMAIL</h3>
+            <p>Mã OTP đã được gửi đến Gmail của bạn.</p>
+
+            <input
+                type="text"
+                id="otp"
+                placeholder="Nhập mã OTP 6 số"
+                inputmode="numeric"
+                maxlength="6"
+            >
+
+            <button type="button" id="verifyBtn">
+                XÁC NHẬN OTP
+            </button>
+        </div>
+
+        <p id="message"></p>
+
+        <p>
+            Đã có tài khoản?
+            <a href="Account.html">Đăng nhập</a>
+        </p>
+    </div>
+
+    <script src="Register.js"></script>
+</body>
+</html>
